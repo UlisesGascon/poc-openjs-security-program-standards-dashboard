@@ -1,0 +1,23 @@
+{
+  "name": "poc-openjs-security-program-standards-dashboard",
+  "version": "1.0.0",
+  "description": "POC - OpenJS Security Program Standards Dashboard",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test __tests__/*.test.js",
+    "lint": "standard",
+    "lint:fix": "standard --fix"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "12.1.0",
+    "inquirer": "12.1.0"
+  },
+  "devDependencies": {
+    "sinon": "^19.0.2",
+    "standard": "^17.1.2"
+  }
+}
