@@ -14,9 +14,9 @@ const schema = {
           type: "object",
           properties: {
             url: { type: "string", format: "uri" },
-            org: { type: "string" }
+            name: { type: "string" }
           },
-          required: ["url", "org"],
+          required: ["url", "name"],
           additionalProperties: false
         }
       }
@@ -38,5 +38,5 @@ export function validateProject(project) {
 }
 
 export function validateAllProjects(projects) {
-    projects.every((project) => validate(project))
+    projects.forEach(validateProject)
   }
