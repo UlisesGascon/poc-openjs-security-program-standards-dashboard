@@ -26,6 +26,21 @@ then use `--env-file` flag to load it, like `node --env-file=.env index.js workf
 
 ## Usage
 
+### Workflows
+
+To run a workflow, use the following command:
+
+```bash
+node index.js workflow run [--name <name>]
+```
+
+To list all available workflows, use the following command:
+
+```bash
+node index.js workflow list
+```
+
+
 ### Projects
 
 To add a new project, use the following command:
