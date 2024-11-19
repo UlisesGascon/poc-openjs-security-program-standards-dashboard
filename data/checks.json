@@ -1,0 +1,18 @@
+{
+  "webCommitSignOff": {
+    "name": "Web Commit Sign-off",
+    "description": "Github Org Requires Commit Sign-off for Web-Based Commits",
+    "level": {
+      "incubating": "recommended",
+      "graduated": "recommended",
+      "retiring": "recommended"
+    },
+    "url": "https://openjs-security-program-standards.netlify.app/details/item-62",
+    "projects": {
+      "express": {
+        "globalAchievement": false,
+        "rationale": "There are 27 (28.72%) repositories that do not require commit sign-off for web-based commits."
+      }
+    }
+  }
+}
