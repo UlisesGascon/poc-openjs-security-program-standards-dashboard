@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`checkWebCommitSignOff should handle projects with no repositories 1`] = `
+{
+  "webCommitSignOff": {
+    "description": "Github Org Requires Commit Sign-off for Web-Based Commits",
+    "level": {
+      "graduated": "recommended",
+      "incubating": "recommended",
+      "retiring": "recommended",
+    },
+    "name": "Web Commit Sign-off",
+    "projects": {
+      "Project3": {
+        "globalAchievement": true,
+        "rationale": "All repositories require commit sign-off for web-based commits.",
+      },
+    },
+    "url": "https://openjs-security-program-standards.netlify.app/details/item-62",
+  },
+}
+`;
+
+exports[`checkWebCommitSignOff should update checks with project compliance data 1`] = `
+{
+  "webCommitSignOff": {
+    "description": "Github Org Requires Commit Sign-off for Web-Based Commits",
+    "level": {
+      "graduated": "recommended",
+      "incubating": "recommended",
+      "retiring": "recommended",
+    },
+    "name": "Web Commit Sign-off",
+    "projects": {
+      "Project1": {
+        "globalAchievement": false,
+        "rationale": "There are 1 (50.00%) repositories that do not require commit sign-off for web-based commits.",
+      },
+      "Project2": {
+        "globalAchievement": true,
+        "rationale": "All repositories require commit sign-off for web-based commits.",
+      },
+    },
+    "url": "https://openjs-security-program-standards.netlify.app/details/item-62",
+  },
+}
+`;
