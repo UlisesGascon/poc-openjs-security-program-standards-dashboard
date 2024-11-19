@@ -50,6 +50,5 @@ describe('checkWebCommitSignOff', () => {
     ]
     checkWebCommitSignOff(projects, checks)
     expect(checks).toMatchSnapshot()
-
   })
 })
