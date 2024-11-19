@@ -2,8 +2,8 @@ import { afterAll, jest } from '@jest/globals'
 import fs from 'fs'
 import { join } from 'path'
 import inquirer from 'inquirer'
-import { getConfig } from '../config/index.js'
-import { runAddProjectCommand } from '../lib/cli/project.js'
+import { getConfig } from '../../config/index.js'
+import { runAddProjectCommand } from '../../lib/cli/project.js'
 
 const { dataPath } = getConfig('test')
 const projectsFile = join(dataPath, 'projects.json')
