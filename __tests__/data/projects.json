@@ -1,0 +1,11 @@
+[
+  {
+    "name": "eslint",
+    "githubOrgs": [
+      {
+        "url": "https://github.com/eslint",
+        "name": "eslint"
+      }
+    ]
+  }
+]
