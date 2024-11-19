@@ -1,0 +1,60 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "webCommitSignOff": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "level": {
+                    "type": "object",
+                    "properties": {
+                        "incubating": {
+                            "type": "string",
+                            "enum": ["n/a", "expected", "recommended"]
+                        },
+                        "graduated": {
+                            "type": "string",
+                            "enum": ["n/a", "expected", "recommended"]
+                        },
+                        "retiring": {
+                            "type": "string",
+                            "enum": ["n/a", "expected", "recommended"]
+                        }
+                    },
+                    "required": ["incubating", "graduated", "retiring"]
+                },
+                "url": {
+                    "type": "string",
+                    "format": "uri"
+                },
+                "projects": {
+                    "type": "object",
+                    "patternProperties": {
+                        "^[a-zA-Z0-9_-]+$": {
+                            "type": "object",
+                            "properties": {
+                                "globalAchievement": {
+                                    "type": "boolean"
+                                },
+                                "rationale": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": ["globalAchievement", "rationale"]
+                        }
+                    },
+                    "additionalProperties": false
+                }
+            },
+            "required": ["name", "description", "level", "url", "projects"],
+            "additionalProperties": false
+        }
+    },
+    "required": ["webCommitSignOff"]
+}
