@@ -8,6 +8,21 @@ To install the dependencies, run:
 npm install
 ```
 
+## Configuration
+
+### Environment Variables
+
+This project requires a GitHub token to access the GitHub API. You need to set the `GITHUB_TOKEN` environment variable. 
+
+#### Optional: use .env file
+
+Create a `.env` file and add your GitHub token:
+
+```sh
+GITHUB_TOKEN=your_github_token_here
+```
+
+then use `--env-file` flag to load it, like `node --env-file=.env index.js workflow run --name populate-repos-list`
 
 ## Usage
 
