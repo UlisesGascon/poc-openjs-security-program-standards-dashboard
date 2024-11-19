@@ -5,8 +5,10 @@ import { runAddProjectCommand } from './lib/cli/project.js'
 
 const program = new Command()
 
-program
-  .command('project add')
+const project = program.command('project').description('Manage projects')
+
+project
+  .command('add')
   .description('Add a new project')
   .option('--name <name>', 'Name of the project')
   .option('--github-urls <urls...>', 'GitHub URLs of the project')
