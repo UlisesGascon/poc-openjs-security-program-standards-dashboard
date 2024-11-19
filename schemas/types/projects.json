@@ -1,0 +1,264 @@
+{
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "githubOrgs": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "url": {
+                        "type": "string",
+                        "format": "uri"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "repositories": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "number"
+                                },
+                                "node_id": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "full_name": {
+                                    "type": "string"
+                                },
+                                "private": {
+                                    "type": "boolean"
+                                },
+                                "html_url": {
+                                    "type": "string",
+                                    "format": "uri"
+                                },
+                                "description": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "fork": {
+                                    "type": "boolean"
+                                },
+                                "created_at": {
+                                    "type": "string",
+                                    "format": "date-time"
+                                },
+                                "updated_at": {
+                                    "type": "string",
+                                    "format": "date-time"
+                                },
+                                "pushed_at": {
+                                    "type": "string",
+                                    "format": "date-time"
+                                },
+                                "size": {
+                                    "type": "number"
+                                },
+                                "stargazers_count": {
+                                    "type": "number"
+                                },
+                                "watchers_count": {
+                                    "type": "number"
+                                },
+                                "language": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "has_issues": {
+                                    "type": "boolean"
+                                },
+                                "has_projects": {
+                                    "type": "boolean"
+                                },
+                                "has_downloads": {
+                                    "type": "boolean"
+                                },
+                                "has_wiki": {
+                                    "type": "boolean"
+                                },
+                                "has_pages": {
+                                    "type": "boolean"
+                                },
+                                "has_discussions": {
+                                    "type": "boolean"
+                                },
+                                "forks_count": {
+                                    "type": "number"
+                                },
+                                "mirror_url": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "format": "uri"
+                                },
+                                "archived": {
+                                    "type": "boolean"
+                                },
+                                "disabled": {
+                                    "type": "boolean"
+                                },
+                                "open_issues_count": {
+                                    "type": "number"
+                                },
+                                "license": {
+                                    "type": [
+                                        "object",
+                                        "null"
+                                    ],
+                                    "properties": {
+                                        "key": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "spdx_id": {
+                                            "type": "string"
+                                        },
+                                        "url": {
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ],
+                                            "format": "uri"
+                                        },
+                                        "node_id": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "key",
+                                        "name",
+                                        "spdx_id",
+                                        "node_id"
+                                    ],
+                                    "additionalProperties": false
+                                },
+                                "allow_forking": {
+                                    "type": "boolean"
+                                },
+                                "is_template": {
+                                    "type": "boolean"
+                                },
+                                "web_commit_signoff_required": {
+                                    "type": "boolean"
+                                },
+                                "topics": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                },
+                                "visibility": {
+                                    "type": "string"
+                                },
+                                "forks": {
+                                    "type": "number"
+                                },
+                                "open_issues": {
+                                    "type": "number"
+                                },
+                                "watchers": {
+                                    "type": "number"
+                                },
+                                "default_branch": {
+                                    "type": "string"
+                                },
+                                "permissions": {
+                                    "type": "object",
+                                    "properties": {
+                                        "admin": {
+                                            "type": "boolean"
+                                        },
+                                        "maintain": {
+                                            "type": "boolean"
+                                        },
+                                        "push": {
+                                            "type": "boolean"
+                                        },
+                                        "triage": {
+                                            "type": "boolean"
+                                        },
+                                        "pull": {
+                                            "type": "boolean"
+                                        }
+                                    },
+                                    "required": [
+                                        "admin",
+                                        "maintain",
+                                        "push",
+                                        "triage",
+                                        "pull"
+                                    ],
+                                    "additionalProperties": false
+                                }
+                            },
+                            "required": [
+                                "id",
+                                "node_id",
+                                "name",
+                                "full_name",
+                                "private",
+                                "html_url",
+                                "description",
+                                "fork",
+                                "created_at",
+                                "updated_at",
+                                "pushed_at",
+                                "size",
+                                "stargazers_count",
+                                "watchers_count",
+                                "language",
+                                "has_issues",
+                                "has_projects",
+                                "has_downloads",
+                                "has_wiki",
+                                "has_pages",
+                                "has_discussions",
+                                "forks_count",
+                                "archived",
+                                "disabled",
+                                "open_issues_count",
+                                "license",
+                                "allow_forking",
+                                "is_template",
+                                "web_commit_signoff_required",
+                                "topics",
+                                "visibility",
+                                "forks",
+                                "open_issues",
+                                "watchers",
+                                "default_branch",
+                                "permissions"
+                            ],
+                            "additionalProperties": false
+                        }
+                    }
+                },
+                "required": [
+                    "url",
+                    "name"
+                ],
+                "additionalProperties": false
+            }
+        }
+    },
+    "required": [
+        "name",
+        "githubOrgs"
+    ],
+    "additionalProperties": false
+}

@@ -1,33 +1,15 @@
 import Ajv from 'ajv'
 import addFormats from 'ajv-formats'
+import { readFileSync } from 'fs'
+import { join } from 'path'
+
+const projectsSchema = JSON.parse(readFileSync(join(process.cwd(), 'schemas/types/projects.json'), 'utf-8'))
 
 const ajv = new Ajv()
 addFormats(ajv)
 
-const schema = {
-  type: 'object',
-  properties: {
-    name: { type: 'string' },
-    githubOrgs: {
-      type: 'array',
-      items: {
-        type: 'object',
-        properties: {
-          url: { type: 'string', format: 'uri' },
-          name: { type: 'string' }
-        },
-        required: ['url', 'name'],
-        additionalProperties: false
-      }
-    }
-  },
-  required: ['name', 'githubOrgs'],
-  additionalProperties: false
-}
-
-const validate = ajv.compile(schema)
-
 export function validateProject (project) {
+  const validate = ajv.compile(projectsSchema)
   const valid = validate(project)
   if (!valid) {
     throw new Error(validate.errors.map((error) => error.message).join('\n'))
