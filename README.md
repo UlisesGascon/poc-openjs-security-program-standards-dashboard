@@ -11,16 +11,18 @@ npm install
 
 ## Usage
 
-To order an item, use the following command:
+### Projects
+
+To add a new project, use the following command:
 
 ```bash
-node  order <item> [--size <size>] [--cheese <cheese>]
+node index.js project add [--name <name>] [--github-urls <urls...>]
 ```
 
-For example, to order a medium pizza with 2 cheese layers:
+For example, to add a project named "express" with GitHub URLs:
 
 ```bash
-node  order pizza --size Medium --cheese 2
+node index.js project add --name express --github-urls https://github.com/expressjs https://github.com/pillarjs https://github.com/jshttp
 ```
 
 ## Running Tests
