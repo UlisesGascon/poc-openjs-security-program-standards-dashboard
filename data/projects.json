@@ -4,7 +4,15 @@
     "githubOrgs": [
       {
         "url": "https://github.com/express",
-        "org": "express"
+        "name": "express"
+      },
+      {
+        "url": "https://github.com/pillarjs",
+        "name": "pillarjs"
+      },
+      {
+        "url": "https://github.com/jshttp",
+        "name": "jshttp"
       }
     ]
   }
