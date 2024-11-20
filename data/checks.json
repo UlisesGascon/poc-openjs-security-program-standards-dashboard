@@ -7,6 +7,7 @@
       "graduated": "recommended",
       "retiring": "recommended"
     },
+    "category": "source control",
     "url": "https://openjs-security-program-standards.netlify.app/details/item-62",
     "projects": {
       "express": {

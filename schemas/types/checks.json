@@ -33,6 +33,21 @@
                     "type": "string",
                     "format": "uri"
                 },
+                "category": {
+                    "type": "string",
+                    "enum": [
+                        "user authentication", 
+                        "user account permissions", 
+                        "service authentication", 
+                        "github workflow permissions", 
+                        "vulnerability management",
+                        "coordinated vulnerability disclosure",
+                        "code quality",
+                        "code review",
+                        "source control",
+                        "dependency inventory"
+                    ]
+                },
                 "projects": {
                     "type": "object",
                     "patternProperties": {
@@ -52,7 +67,7 @@
                     "additionalProperties": false
                 }
             },
-            "required": ["name", "description", "level", "url", "projects"],
+            "required": ["name", "description", "level", "url", "category", "projects"],
             "additionalProperties": false
         }
     },
