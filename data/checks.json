@@ -7,13 +7,64 @@
       "graduated": "recommended",
       "retiring": "recommended"
     },
-    "category": "source control",
     "url": "https://openjs-security-program-standards.netlify.app/details/item-62",
     "projects": {
       "express": {
         "globalAchievement": false,
         "rationale": "There are 27 (28.72%) repositories that do not require commit sign-off for web-based commits."
       }
-    }
+    },
+    "category": "source control"
+  },
+  "owaspTop10Training": {
+    "name": "OWASP Top 10 Training",
+    "description": "At least One Primary Maintainer has taken TBD Training on OWASP Top 10 or Equivalent",
+    "level": {
+      "incubating": "expected",
+      "graduated": "expected",
+      "retiring": "expected"
+    },
+    "url": "https://openjs-security-program-standards.netlify.app/details/item-1",
+    "projects": {
+      "express": {
+        "globalAchievement": false,
+        "rationale": "The team has not completed the required training or requires an update."
+      }
+    },
+    "category": "code quality"
+  },
+  "secureSoftwareDesignTraining": {
+    "name": "Secure Software Design Training",
+    "description": "At least One Primary Maintainer has taken TBD Training on Secure Software Design",
+    "level": {
+      "incubating": "expected",
+      "graduated": "expected",
+      "retiring": "expected"
+    },
+    "url": "https://openjs-security-program-standards.netlify.app/details/item-0",
+    "projects": {
+      "express": {
+        "globalAchievement": false,
+        "rationale": "The team has not completed the required training or requires an update."
+      }
+    },
+    "category": "code quality"
+  },
+  "npmMfaEnabled": {
+    "name": "MFA enabled for npm",
+    "description": "Multi Factor Authentication (MFA) Enforced Across the npm Organization",
+    "level": {
+      "incubating": "expected",
+      "graduated": "expected",
+      "retiring": "expected"
+    },
+    "url": "https://openjs-security-program-standards.netlify.app/details/item-3",
+    "projects": {
+      "express": {
+        "globalAchievement": false,
+        "rationale": "The team has not completed the configuration or requires a confirmation."
+      }
+    },
+    "category": "user authentication"
   }
 }
