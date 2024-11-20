@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`checkNpmMfaEnabled should handle projects with expired setup 1`] = `
+{
+  "npmMfaEnabled": {
+    "description": "Multi Factor Authentication (MFA) Enforced Across the npm Organization",
+    "level": {
+      "graduated": "expected",
+      "incubating": "expected",
+      "retiring": "expected",
+    },
+    "name": "MFA enabled for npm",
+    "projects": {
+      "Project4": {
+        "globalAchievement": false,
+        "rationale": "The team has not completed the configuration or requires a confirmation.",
+      },
+    },
+    "url": "https://openjs-security-program-standards.netlify.app/details/item-3",
+  },
+}
+`;
+
+exports[`checkNpmMfaEnabled should handle projects with no additional information 1`] = `
+{
+  "npmMfaEnabled": {
+    "description": "Multi Factor Authentication (MFA) Enforced Across the npm Organization",
+    "level": {
+      "graduated": "expected",
+      "incubating": "expected",
+      "retiring": "expected",
+    },
+    "name": "MFA enabled for npm",
+    "projects": {
+      "Project3": {
+        "globalAchievement": false,
+        "rationale": "The team has not completed the configuration or requires a confirmation.",
+      },
+    },
+    "url": "https://openjs-security-program-standards.netlify.app/details/item-3",
+  },
+}
+`;
+
+exports[`checkNpmMfaEnabled should update checks with project compliance data 1`] = `
+{
+  "npmMfaEnabled": {
+    "description": "Multi Factor Authentication (MFA) Enforced Across the npm Organization",
+    "level": {
+      "graduated": "expected",
+      "incubating": "expected",
+      "retiring": "expected",
+    },
+    "name": "MFA enabled for npm",
+    "projects": {
+      "Project1": {
+        "globalAchievement": true,
+        "rationale": "Setup completed",
+      },
+      "Project2": {
+        "globalAchievement": false,
+        "rationale": "The team has not completed the configuration or requires a confirmation.",
+      },
+    },
+    "url": "https://openjs-security-program-standards.netlify.app/details/item-3",
+  },
+}
+`;
