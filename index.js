@@ -3,6 +3,9 @@
 import { Command } from 'commander'
 import { runAddProjectCommand } from './lib/cli/project.js'
 import { runWorkflowCommand, ListWorkflowCommand } from './lib/cli/workflow.js'
+import { getConfig } from './config/index.js'
+
+const { projectCategories } = getConfig()
 
 const program = new Command()
 
@@ -14,6 +17,7 @@ project
   .description('Add a new project')
   .option('--name <name>', 'Name of the project')
   .option('--github-urls <urls...>', 'GitHub URLs of the project')
+  .option('--category <category>', `Category of the project. Choose from: ${projectCategories.join(', ')}`)
   .action((options) => {
     runAddProjectCommand(options)
   })
