@@ -1,0 +1,30 @@
+# <%= helpers.capitalize(project.name) %> Tasks
+
+### Critical
+
+This tasks require immediate attention.
+
+<%_ Object.keys(tasks).forEach(taskName => { -%>
+<%_ if (tasks[taskName].priority === 'critical') { -%>
+- [ ] **<%= tasks[taskName].name %>**: _<%= tasks[taskName].description %> ([<%= taskName %>](<%= tasks[taskName].url %>))_
+<%_ } -%>
+<%_ }); -%>
+
+### Low
+
+These tasks are not critical but should be addressed at some point.
+
+<%_ Object.keys(tasks).forEach(taskName => { -%>
+<%_ if (tasks[taskName].priority === 'low') { -%>
+- [ ] **<%= tasks[taskName].name %>**: _<%= tasks[taskName].description %> ([<%= taskName %>](<%= tasks[taskName].url %>))_
+<%_ if (tasks[taskName].repositories) { -%>
+<%_ tasks[taskName].repositories.forEach(repository => { -%>
+    - [ ] [<%= repository.full_name %>](<%= repository.html_url %>)
+        <%_ }) -%>
+        <%_ } -%>
+<%_ } -%>
+<%_ }); -%>
+
+---
+
+This report was auto-generated on <%= helpers.getReportGenerationTime() %>.

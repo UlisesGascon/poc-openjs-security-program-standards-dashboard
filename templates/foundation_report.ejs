@@ -1,0 +1,48 @@
+# Foundation Dashboard
+
+In this dashboard, you can find the status of all the projects that are part of the foundation from a high-level perspective. Every project listed includes additional reports with its own dashboard, tasks, and alerts.
+
+## Overview
+
+This dashboard is based on [<%= globalInformation.checkListUrlText %>](<%= globalInformation.checkListUrl %>), which defines a total of <%= globalInformation.totalChecksDefined %> checkpoints divided into <%= globalInformation.checksCategories.length %> categories (<%= globalInformation.checksCategories.join(", ") %>).
+
+In this report, you can find **<%= globalInformation.totalChecksImplemented %> (<%= ((globalInformation.totalChecksImplemented / globalInformation.totalChecksDefined) * 100).toFixed(2) %>%) implemented checkpoints**. We are continuously working on adding more checkpoints and projects ([complete list](<%= globalInformation.checkListUrl %>)).
+
+Currently, we have scanned **<%= globalInformation.totalProjects %> project(s)**. This includes **<%= globalInformation.totalRepositories %> GitHub repositories** within **<%= globalInformation.totalGithubOrganizations %> GitHub organization(s)**.
+
+### Projects
+
+<%_ projects.forEach(project => { -%>
+- <%= helpers.capitalize(project.name) %> (<%= project.category %>): [Detailed Report](projects/<%= project.name %>_report.md), [Alerts](projects/<%= project.name %>_alerts.md), [Pending Tasks](projects/<%= project.name %>_tasks.md)
+<%_ }); -%>
+
+## Objectives
+
+<%_ Object.keys(checks).forEach(name => { -%>
+
+### <%= checks[name].name %>
+
+<%= checks[name].description %>
+
+**Status**
+
+<%_ if (Object.values(checks[name].projects).every(p => p.globalAchievement)) { -%>
+✅ All projects meet this requirement
+<%_ } else if (Object.values(checks[name].projects).some(p => p.globalAchievement)) { -%>
+⚠️ Some projects do not meet this requirement
+<%_ } else { -%>
+❌ None of the projects meet this requirement
+<%_ } -%>
+
+**Details**
+- [More information](<%= checks[name].url %>)
+- Category: <%= checks[name].category %>
+- Incubating Level: <%= checks[name].level.incubating %>
+- Graduated Level: <%= checks[name].level.graduated %>
+- Retiring Level: <%= checks[name].level.retiring %>
+
+<%_ }); -%>
+
+---
+
+This report was auto-generated on <%= helpers.getReportGenerationTime() %>.

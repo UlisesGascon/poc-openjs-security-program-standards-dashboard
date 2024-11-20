@@ -1,0 +1,13 @@
+# <%= helpers.capitalize(project.name) %> Alerts
+
+These are the alerts organized by severity
+
+## Critical
+
+<%_ Object.keys(alerts).forEach(alert => { -%>
+- **<%= alerts[alert].name %>**: _<%= alerts[alert].description %> ([<%= alert %>](<%= alerts[alert].url %>))_
+<%_ }); -%>
+
+---
+
+This report was auto-generated on <%= helpers.getReportGenerationTime() %>.
