@@ -11,7 +11,7 @@
     "projects": {
       "express": {
         "globalAchievement": false,
-        "rationale": "There are 27 (28.72%) repositories that do not require commit sign-off for web-based commits."
+        "rationale": "There are 94 (100.00%) repositories that do not require commit sign-off for web-based commits."
       }
     },
     "category": "source control"

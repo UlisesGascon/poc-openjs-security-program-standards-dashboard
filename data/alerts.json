@@ -1,0 +1,25 @@
+{
+  "express": {
+    "owaspTop10Training": {
+      "name": "Lack of Training or validation on OWASP Top 10",
+      "description": "At least One Primary Maintainer has taken TBD Training on OWASP Top 10 or Equivalent",
+      "priority": "critical",
+      "url": "https://openjs-security-program-standards.netlify.app/details/item-1",
+      "category": "code quality"
+    },
+    "secureSoftwareDesignTraining": {
+      "name": "Lack of Training or validation on Secure Software Design",
+      "description": "At least One Primary Maintainer has taken TBD Training on Secure Software Design or Equivalent",
+      "priority": "critical",
+      "url": "https://openjs-security-program-standards.netlify.app/details/item-1",
+      "category": "code quality"
+    },
+    "npmMfaEnabled": {
+      "name": "MFA is disabled or requires confirmation for npm",
+      "description": "It is expected to enforce Multi Factor Authentication (MFA) across the npm Organization",
+      "priority": "critical",
+      "url": "https://openjs-security-program-standards.netlify.app/details/item-3",
+      "category": "user authentication"
+    }
+  }
+}
