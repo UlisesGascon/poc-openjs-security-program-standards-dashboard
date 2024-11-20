@@ -5,6 +5,10 @@
         "name": {
             "type": "string"
         },
+        "category": {
+            "type": "string",
+            "enum": ["impact", "at-large", "incubation", "emeritus"]
+        },
         "githubOrgs": {
             "type": "array",
             "items": {
@@ -259,6 +263,7 @@
     },
     "required": [
         "name",
+        "category",
         "githubOrgs"
     ],
     "additionalProperties": false
