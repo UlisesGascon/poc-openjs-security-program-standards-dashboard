@@ -5008,7 +5008,7 @@
       },
       "npmMfaEnabled": {
         "globalAchievement": true,
-        "rationale": "The team has enabled MFA and it is not using tokens to publicate packages",
+        "rationale": "The team has enabled MFA and it is using 2FA to publicate packages",
         "confirmationDate": "2024-03-01T00:00:00Z"
       }
     } 
