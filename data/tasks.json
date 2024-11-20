@@ -1,0 +1,410 @@
+{
+  "express": {
+    "webCommitSignOff": {
+      "name": "Enable Commit Sign-off for Web-Based Commits",
+      "description": "Enable commit sign-off for web-based commits in all repositories",
+      "priority": "low",
+      "url": "https://openjs-security-program-standards.netlify.app/details/item-62",
+      "category": "source control",
+      "repositories": [
+        {
+          "full_name": "expressjs/express",
+          "html_url": "https://github.com/expressjs/express"
+        },
+        {
+          "full_name": "expressjs/express-namespace",
+          "html_url": "https://github.com/expressjs/express-namespace"
+        },
+        {
+          "full_name": "expressjs/express-expose",
+          "html_url": "https://github.com/expressjs/express-expose"
+        },
+        {
+          "full_name": "expressjs/expressjs.com",
+          "html_url": "https://github.com/expressjs/expressjs.com"
+        },
+        {
+          "full_name": "expressjs/urlrouter",
+          "html_url": "https://github.com/expressjs/urlrouter"
+        },
+        {
+          "full_name": "expressjs/cors",
+          "html_url": "https://github.com/expressjs/cors"
+        },
+        {
+          "full_name": "expressjs/restful-router",
+          "html_url": "https://github.com/expressjs/restful-router"
+        },
+        {
+          "full_name": "expressjs/domain-middleware",
+          "html_url": "https://github.com/expressjs/domain-middleware"
+        },
+        {
+          "full_name": "expressjs/connect-multiparty",
+          "html_url": "https://github.com/expressjs/connect-multiparty"
+        },
+        {
+          "full_name": "expressjs/connect-markdown",
+          "html_url": "https://github.com/expressjs/connect-markdown"
+        },
+        {
+          "full_name": "expressjs/generator",
+          "html_url": "https://github.com/expressjs/generator"
+        },
+        {
+          "full_name": "expressjs/routification",
+          "html_url": "https://github.com/expressjs/routification"
+        },
+        {
+          "full_name": "expressjs/vhostess",
+          "html_url": "https://github.com/expressjs/vhostess"
+        },
+        {
+          "full_name": "expressjs/compression",
+          "html_url": "https://github.com/expressjs/compression"
+        },
+        {
+          "full_name": "expressjs/body-parser",
+          "html_url": "https://github.com/expressjs/body-parser"
+        },
+        {
+          "full_name": "expressjs/basic-auth-connect",
+          "html_url": "https://github.com/expressjs/basic-auth-connect"
+        },
+        {
+          "full_name": "expressjs/connect-rid",
+          "html_url": "https://github.com/expressjs/connect-rid"
+        },
+        {
+          "full_name": "expressjs/multer",
+          "html_url": "https://github.com/expressjs/multer"
+        },
+        {
+          "full_name": "expressjs/serve-favicon",
+          "html_url": "https://github.com/expressjs/serve-favicon"
+        },
+        {
+          "full_name": "expressjs/response-time",
+          "html_url": "https://github.com/expressjs/response-time"
+        },
+        {
+          "full_name": "expressjs/morgan",
+          "html_url": "https://github.com/expressjs/morgan"
+        },
+        {
+          "full_name": "expressjs/cookie-parser",
+          "html_url": "https://github.com/expressjs/cookie-parser"
+        },
+        {
+          "full_name": "expressjs/session",
+          "html_url": "https://github.com/expressjs/session"
+        },
+        {
+          "full_name": "expressjs/cookie-session",
+          "html_url": "https://github.com/expressjs/cookie-session"
+        },
+        {
+          "full_name": "expressjs/errorhandler",
+          "html_url": "https://github.com/expressjs/errorhandler"
+        },
+        {
+          "full_name": "expressjs/method-override",
+          "html_url": "https://github.com/expressjs/method-override"
+        },
+        {
+          "full_name": "expressjs/timeout",
+          "html_url": "https://github.com/expressjs/timeout"
+        },
+        {
+          "full_name": "expressjs/vhost",
+          "html_url": "https://github.com/expressjs/vhost"
+        },
+        {
+          "full_name": "expressjs/serve-index",
+          "html_url": "https://github.com/expressjs/serve-index"
+        },
+        {
+          "full_name": "expressjs/serve-static",
+          "html_url": "https://github.com/expressjs/serve-static"
+        },
+        {
+          "full_name": "expressjs/mime-extended",
+          "html_url": "https://github.com/expressjs/mime-extended"
+        },
+        {
+          "full_name": "expressjs/set-type",
+          "html_url": "https://github.com/expressjs/set-type"
+        },
+        {
+          "full_name": "expressjs/express-paginate",
+          "html_url": "https://github.com/expressjs/express-paginate"
+        },
+        {
+          "full_name": "expressjs/expressjs.github.io",
+          "html_url": "https://github.com/expressjs/expressjs.github.io"
+        },
+        {
+          "full_name": "expressjs/flash",
+          "html_url": "https://github.com/expressjs/flash"
+        },
+        {
+          "full_name": "expressjs/badgeboard",
+          "html_url": "https://github.com/expressjs/badgeboard"
+        },
+        {
+          "full_name": "expressjs/discussions",
+          "html_url": "https://github.com/expressjs/discussions"
+        },
+        {
+          "full_name": "expressjs/statusboard",
+          "html_url": "https://github.com/expressjs/statusboard"
+        },
+        {
+          "full_name": "expressjs/.github",
+          "html_url": "https://github.com/expressjs/.github"
+        },
+        {
+          "full_name": "expressjs/admin",
+          "html_url": "https://github.com/expressjs/admin"
+        },
+        {
+          "full_name": "expressjs/security-wg",
+          "html_url": "https://github.com/expressjs/security-wg"
+        },
+        {
+          "full_name": "expressjs/tooling",
+          "html_url": "https://github.com/expressjs/tooling"
+        },
+        {
+          "full_name": "expressjs/codemod",
+          "html_url": "https://github.com/expressjs/codemod"
+        },
+        {
+          "full_name": "pillarjs/hbs",
+          "html_url": "https://github.com/pillarjs/hbs"
+        },
+        {
+          "full_name": "pillarjs/cookies",
+          "html_url": "https://github.com/pillarjs/cookies"
+        },
+        {
+          "full_name": "pillarjs/send",
+          "html_url": "https://github.com/pillarjs/send"
+        },
+        {
+          "full_name": "pillarjs/path-to-regexp",
+          "html_url": "https://github.com/pillarjs/path-to-regexp"
+        },
+        {
+          "full_name": "pillarjs/multiparty",
+          "html_url": "https://github.com/pillarjs/multiparty"
+        },
+        {
+          "full_name": "pillarjs/routington",
+          "html_url": "https://github.com/pillarjs/routington"
+        },
+        {
+          "full_name": "pillarjs/parseurl",
+          "html_url": "https://github.com/pillarjs/parseurl"
+        },
+        {
+          "full_name": "pillarjs/node-frameworks",
+          "html_url": "https://github.com/pillarjs/node-frameworks"
+        },
+        {
+          "full_name": "pillarjs/resolve-path",
+          "html_url": "https://github.com/pillarjs/resolve-path"
+        },
+        {
+          "full_name": "pillarjs/finalhandler",
+          "html_url": "https://github.com/pillarjs/finalhandler"
+        },
+        {
+          "full_name": "pillarjs/ssl-redirect",
+          "html_url": "https://github.com/pillarjs/ssl-redirect"
+        },
+        {
+          "full_name": "pillarjs/csrf",
+          "html_url": "https://github.com/pillarjs/csrf"
+        },
+        {
+          "full_name": "pillarjs/templation",
+          "html_url": "https://github.com/pillarjs/templation"
+        },
+        {
+          "full_name": "pillarjs/discussions",
+          "html_url": "https://github.com/pillarjs/discussions"
+        },
+        {
+          "full_name": "pillarjs/router",
+          "html_url": "https://github.com/pillarjs/router"
+        },
+        {
+          "full_name": "pillarjs/views",
+          "html_url": "https://github.com/pillarjs/views"
+        },
+        {
+          "full_name": "pillarjs/pillarjs.github.io",
+          "html_url": "https://github.com/pillarjs/pillarjs.github.io"
+        },
+        {
+          "full_name": "pillarjs/understanding-csrf",
+          "html_url": "https://github.com/pillarjs/understanding-csrf"
+        },
+        {
+          "full_name": "pillarjs/qs-strict",
+          "html_url": "https://github.com/pillarjs/qs-strict"
+        },
+        {
+          "full_name": "pillarjs/extend-proto",
+          "html_url": "https://github.com/pillarjs/extend-proto"
+        },
+        {
+          "full_name": "pillarjs/encodeurl",
+          "html_url": "https://github.com/pillarjs/encodeurl"
+        },
+        {
+          "full_name": "pillarjs/request",
+          "html_url": "https://github.com/pillarjs/request"
+        },
+        {
+          "full_name": "pillarjs/.github",
+          "html_url": "https://github.com/pillarjs/.github"
+        },
+        {
+          "full_name": "pillarjs/re2js-legendary",
+          "html_url": "https://github.com/pillarjs/re2js-legendary"
+        },
+        {
+          "full_name": "jshttp/negotiator",
+          "html_url": "https://github.com/jshttp/negotiator"
+        },
+        {
+          "full_name": "jshttp/cookie",
+          "html_url": "https://github.com/jshttp/cookie"
+        },
+        {
+          "full_name": "jshttp/fresh",
+          "html_url": "https://github.com/jshttp/fresh"
+        },
+        {
+          "full_name": "jshttp/range-parser",
+          "html_url": "https://github.com/jshttp/range-parser"
+        },
+        {
+          "full_name": "jshttp/methods",
+          "html_url": "https://github.com/jshttp/methods"
+        },
+        {
+          "full_name": "jshttp/basic-auth",
+          "html_url": "https://github.com/jshttp/basic-auth"
+        },
+        {
+          "full_name": "jshttp/compressible",
+          "html_url": "https://github.com/jshttp/compressible"
+        },
+        {
+          "full_name": "jshttp/on-finished",
+          "html_url": "https://github.com/jshttp/on-finished"
+        },
+        {
+          "full_name": "jshttp/http-assert",
+          "html_url": "https://github.com/jshttp/http-assert"
+        },
+        {
+          "full_name": "jshttp/accepts",
+          "html_url": "https://github.com/jshttp/accepts"
+        },
+        {
+          "full_name": "jshttp/type-is",
+          "html_url": "https://github.com/jshttp/type-is"
+        },
+        {
+          "full_name": "jshttp/statuses",
+          "html_url": "https://github.com/jshttp/statuses"
+        },
+        {
+          "full_name": "jshttp/mime-types",
+          "html_url": "https://github.com/jshttp/mime-types"
+        },
+        {
+          "full_name": "jshttp/proxy-addr",
+          "html_url": "https://github.com/jshttp/proxy-addr"
+        },
+        {
+          "full_name": "jshttp/style-guide",
+          "html_url": "https://github.com/jshttp/style-guide"
+        },
+        {
+          "full_name": "jshttp/on-headers",
+          "html_url": "https://github.com/jshttp/on-headers"
+        },
+        {
+          "full_name": "jshttp/vary",
+          "html_url": "https://github.com/jshttp/vary"
+        },
+        {
+          "full_name": "jshttp/media-typer",
+          "html_url": "https://github.com/jshttp/media-typer"
+        },
+        {
+          "full_name": "jshttp/etag",
+          "html_url": "https://github.com/jshttp/etag"
+        },
+        {
+          "full_name": "jshttp/jshttp.github.io",
+          "html_url": "https://github.com/jshttp/jshttp.github.io"
+        },
+        {
+          "full_name": "jshttp/mime-db",
+          "html_url": "https://github.com/jshttp/mime-db"
+        },
+        {
+          "full_name": "jshttp/http-utils",
+          "html_url": "https://github.com/jshttp/http-utils"
+        },
+        {
+          "full_name": "jshttp/http-errors",
+          "html_url": "https://github.com/jshttp/http-errors"
+        },
+        {
+          "full_name": "jshttp/content-disposition",
+          "html_url": "https://github.com/jshttp/content-disposition"
+        },
+        {
+          "full_name": "jshttp/forwarded",
+          "html_url": "https://github.com/jshttp/forwarded"
+        },
+        {
+          "full_name": "jshttp/content-type",
+          "html_url": "https://github.com/jshttp/content-type"
+        },
+        {
+          "full_name": "jshttp/.github",
+          "html_url": "https://github.com/jshttp/.github"
+        }
+      ]
+    },
+    "owaspTop10Training": {
+      "name": "Train or renew the certification for the team on OWASP Top 10",
+      "description": "At least One Primary Maintainer has taken TBD Training on OWASP Top 10 or Equivalent",
+      "priority": "critical",
+      "url": "https://openjs-security-program-standards.netlify.app/details/item-1",
+      "category": "code quality"
+    },
+    "secureSoftwareDesignTraining": {
+      "name": "Train or renew the certification for the team on Secure Software Design",
+      "description": "At least One Primary Maintainer has taken TBD Training on Secure Software Design or Equivalent",
+      "priority": "critical",
+      "url": "https://openjs-security-program-standards.netlify.app/details/item-1",
+      "category": "code quality"
+    },
+    "npmMfaEnabled": {
+      "name": "Enable MFA for npm",
+      "description": "It is expected to enforce Multi Factor Authentication (MFA) across the npm Organization",
+      "priority": "critical",
+      "url": "https://openjs-security-program-standards.netlify.app/details/item-3",
+      "category": "user authentication"
+    }
+  }
+}
