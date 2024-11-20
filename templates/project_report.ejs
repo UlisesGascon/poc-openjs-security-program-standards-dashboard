@@ -1,0 +1,22 @@
+# <%= helpers.capitalize(project.name) %> Dashboard
+
+You can find the status of the project from a high-level perspective. 
+More detailed information can be found as [alerts](<%= context.projectName %>_alerts.md) and [tasks](<%= context.projectName %>_tasks.md).
+
+## Checks
+
+<%_ Object.keys(checks).forEach(checkName => { -%>
+<%_  if (checks[checkName].projects[project.name]) { -%>
+### <%= checks[checkName].name %>
+
+<%= checks[checkName].description %>
+
+**Status:** <%= checks[checkName].projects[project.name].globalAchievement ? '✅' : '❌' %> <%= checks[checkName].projects[project.name].rationale  %> ([checkName](<%= checks[checkName].url %>))
+
+
+<%_ } -%>
+<%_ }) -%>
+
+---
+
+This report was auto-generated on <%= helpers.getReportGenerationTime() %>.
