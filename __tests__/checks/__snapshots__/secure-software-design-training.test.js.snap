@@ -22,6 +22,34 @@ exports[`checkSecureSoftwareDesignTraining should handle projects with expired t
 }
 `;
 
+exports[`checkSecureSoftwareDesignTraining should handle projects with expired training 2`] = `
+{
+  "Project4": {
+    "secureSoftwareDesignTraining": {
+      "category": "code quality",
+      "description": "At least One Primary Maintainer has taken TBD Training on Secure Software Design or Equivalent",
+      "name": "Train or renew the certification for the team on Secure Software Design",
+      "priority": "critical",
+      "url": "https://openjs-security-program-standards.netlify.app/details/item-1",
+    },
+  },
+}
+`;
+
+exports[`checkSecureSoftwareDesignTraining should handle projects with expired training 3`] = `
+{
+  "Project4": {
+    "secureSoftwareDesignTraining": {
+      "category": "code quality",
+      "description": "At least One Primary Maintainer has taken TBD Training on Secure Software Design or Equivalent",
+      "name": "Lack of Training or validation on Secure Software Design",
+      "priority": "critical",
+      "url": "https://openjs-security-program-standards.netlify.app/details/item-1",
+    },
+  },
+}
+`;
+
 exports[`checkSecureSoftwareDesignTraining should handle projects with no additional information 1`] = `
 {
   "secureSoftwareDesignTraining": {
@@ -40,6 +68,34 @@ exports[`checkSecureSoftwareDesignTraining should handle projects with no additi
       },
     },
     "url": "https://openjs-security-program-standards.netlify.app/details/item-0",
+  },
+}
+`;
+
+exports[`checkSecureSoftwareDesignTraining should handle projects with no additional information 2`] = `
+{
+  "Project3": {
+    "secureSoftwareDesignTraining": {
+      "category": "code quality",
+      "description": "At least One Primary Maintainer has taken TBD Training on Secure Software Design or Equivalent",
+      "name": "Train or renew the certification for the team on Secure Software Design",
+      "priority": "critical",
+      "url": "https://openjs-security-program-standards.netlify.app/details/item-1",
+    },
+  },
+}
+`;
+
+exports[`checkSecureSoftwareDesignTraining should handle projects with no additional information 3`] = `
+{
+  "Project3": {
+    "secureSoftwareDesignTraining": {
+      "category": "code quality",
+      "description": "At least One Primary Maintainer has taken TBD Training on Secure Software Design or Equivalent",
+      "name": "Lack of Training or validation on Secure Software Design",
+      "priority": "critical",
+      "url": "https://openjs-security-program-standards.netlify.app/details/item-1",
+    },
   },
 }
 `;
@@ -66,6 +122,34 @@ exports[`checkSecureSoftwareDesignTraining should update checks with project com
       },
     },
     "url": "https://openjs-security-program-standards.netlify.app/details/item-0",
+  },
+}
+`;
+
+exports[`checkSecureSoftwareDesignTraining should update checks with project compliance data 2`] = `
+{
+  "Project2": {
+    "secureSoftwareDesignTraining": {
+      "category": "code quality",
+      "description": "At least One Primary Maintainer has taken TBD Training on Secure Software Design or Equivalent",
+      "name": "Train or renew the certification for the team on Secure Software Design",
+      "priority": "critical",
+      "url": "https://openjs-security-program-standards.netlify.app/details/item-1",
+    },
+  },
+}
+`;
+
+exports[`checkSecureSoftwareDesignTraining should update checks with project compliance data 3`] = `
+{
+  "Project2": {
+    "secureSoftwareDesignTraining": {
+      "category": "code quality",
+      "description": "At least One Primary Maintainer has taken TBD Training on Secure Software Design or Equivalent",
+      "name": "Lack of Training or validation on Secure Software Design",
+      "priority": "critical",
+      "url": "https://openjs-security-program-standards.netlify.app/details/item-1",
+    },
   },
 }
 `;

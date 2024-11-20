@@ -6,6 +6,8 @@ jest.mock('../../lib/utils/index.js')
 describe('checkSecureSoftwareDesignTraining', () => {
   let projects
   let checks
+  let tasks
+  let alerts
 
   beforeEach(() => {
     projects = [
@@ -31,12 +33,16 @@ describe('checkSecureSoftwareDesignTraining', () => {
       }
     ]
     checks = {}
+    tasks = {}
+    alerts = {}
     isDateWithinPolicy.mockReturnValue(true)
   })
 
   it('should update checks with project compliance data', () => {
-    checkSecureSoftwareDesignTraining(projects, checks)
+    checkSecureSoftwareDesignTraining({ projects, checks, tasks, alerts })
     expect(checks).toMatchSnapshot()
+    expect(tasks).toMatchSnapshot()
+    expect(alerts).toMatchSnapshot()
   })
 
   it('should handle projects with no additional information', () => {
@@ -45,8 +51,10 @@ describe('checkSecureSoftwareDesignTraining', () => {
         name: 'Project3'
       }
     ]
-    checkSecureSoftwareDesignTraining(projects, checks)
+    checkSecureSoftwareDesignTraining({ projects, checks, tasks, alerts })
     expect(checks).toMatchSnapshot()
+    expect(tasks).toMatchSnapshot()
+    expect(alerts).toMatchSnapshot()
   })
 
   it('should handle projects with expired training', () => {
@@ -63,7 +71,9 @@ describe('checkSecureSoftwareDesignTraining', () => {
       }
     ]
     isDateWithinPolicy.mockReturnValue(false)
-    checkSecureSoftwareDesignTraining(projects, checks)
+    checkSecureSoftwareDesignTraining({ projects, checks, tasks, alerts })
     expect(checks).toMatchSnapshot()
+    expect(tasks).toMatchSnapshot()
+    expect(alerts).toMatchSnapshot()
   })
 })

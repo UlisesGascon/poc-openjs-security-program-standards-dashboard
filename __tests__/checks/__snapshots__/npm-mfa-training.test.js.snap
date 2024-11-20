@@ -22,6 +22,34 @@ exports[`checkNpmMfaEnabled should handle projects with expired setup 1`] = `
 }
 `;
 
+exports[`checkNpmMfaEnabled should handle projects with expired setup 2`] = `
+{
+  "Project4": {
+    "npmMfaEnabled": {
+      "category": "user authentication",
+      "description": "It is expected to enforce Multi Factor Authentication (MFA) across the npm Organization",
+      "name": "Enable MFA for npm",
+      "priority": "critical",
+      "url": "https://openjs-security-program-standards.netlify.app/details/item-3",
+    },
+  },
+}
+`;
+
+exports[`checkNpmMfaEnabled should handle projects with expired setup 3`] = `
+{
+  "Project4": {
+    "npmMfaEnabled": {
+      "category": "user authentication",
+      "description": "It is expected to enforce Multi Factor Authentication (MFA) across the npm Organization",
+      "name": "MFA is disabled or requires confirmation for npm",
+      "priority": "critical",
+      "url": "https://openjs-security-program-standards.netlify.app/details/item-3",
+    },
+  },
+}
+`;
+
 exports[`checkNpmMfaEnabled should handle projects with no additional information 1`] = `
 {
   "npmMfaEnabled": {
@@ -40,6 +68,34 @@ exports[`checkNpmMfaEnabled should handle projects with no additional informatio
       },
     },
     "url": "https://openjs-security-program-standards.netlify.app/details/item-3",
+  },
+}
+`;
+
+exports[`checkNpmMfaEnabled should handle projects with no additional information 2`] = `
+{
+  "Project3": {
+    "npmMfaEnabled": {
+      "category": "user authentication",
+      "description": "It is expected to enforce Multi Factor Authentication (MFA) across the npm Organization",
+      "name": "Enable MFA for npm",
+      "priority": "critical",
+      "url": "https://openjs-security-program-standards.netlify.app/details/item-3",
+    },
+  },
+}
+`;
+
+exports[`checkNpmMfaEnabled should handle projects with no additional information 3`] = `
+{
+  "Project3": {
+    "npmMfaEnabled": {
+      "category": "user authentication",
+      "description": "It is expected to enforce Multi Factor Authentication (MFA) across the npm Organization",
+      "name": "MFA is disabled or requires confirmation for npm",
+      "priority": "critical",
+      "url": "https://openjs-security-program-standards.netlify.app/details/item-3",
+    },
   },
 }
 `;
@@ -66,6 +122,34 @@ exports[`checkNpmMfaEnabled should update checks with project compliance data 1`
       },
     },
     "url": "https://openjs-security-program-standards.netlify.app/details/item-3",
+  },
+}
+`;
+
+exports[`checkNpmMfaEnabled should update checks with project compliance data 2`] = `
+{
+  "Project2": {
+    "npmMfaEnabled": {
+      "category": "user authentication",
+      "description": "It is expected to enforce Multi Factor Authentication (MFA) across the npm Organization",
+      "name": "Enable MFA for npm",
+      "priority": "critical",
+      "url": "https://openjs-security-program-standards.netlify.app/details/item-3",
+    },
+  },
+}
+`;
+
+exports[`checkNpmMfaEnabled should update checks with project compliance data 3`] = `
+{
+  "Project2": {
+    "npmMfaEnabled": {
+      "category": "user authentication",
+      "description": "It is expected to enforce Multi Factor Authentication (MFA) across the npm Organization",
+      "name": "MFA is disabled or requires confirmation for npm",
+      "priority": "critical",
+      "url": "https://openjs-security-program-standards.netlify.app/details/item-3",
+    },
   },
 }
 `;

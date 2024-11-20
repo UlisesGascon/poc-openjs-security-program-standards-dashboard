@@ -6,6 +6,8 @@ jest.mock('../../lib/utils/index.js')
 describe('checkOwaspTop10Training', () => {
   let projects
   let checks
+  let tasks
+  let alerts
 
   beforeEach(() => {
     projects = [
@@ -31,12 +33,16 @@ describe('checkOwaspTop10Training', () => {
       }
     ]
     checks = {}
+    tasks = {}
+    alerts = {}
     isDateWithinPolicy.mockReturnValue(true)
   })
 
   it('should update checks with project compliance data', () => {
-    checkOwaspTop10Training(projects, checks)
+    checkOwaspTop10Training({ projects, checks, tasks, alerts })
     expect(checks).toMatchSnapshot()
+    expect(tasks).toMatchSnapshot()
+    expect(alerts).toMatchSnapshot()
   })
 
   it('should handle projects with no additional information', () => {
@@ -45,8 +51,10 @@ describe('checkOwaspTop10Training', () => {
         name: 'Project3'
       }
     ]
-    checkOwaspTop10Training(projects, checks)
+    checkOwaspTop10Training({ projects, checks, tasks, alerts })
     expect(checks).toMatchSnapshot()
+    expect(tasks).toMatchSnapshot()
+    expect(alerts).toMatchSnapshot()
   })
 
   it('should handle projects with expired training', () => {
@@ -63,7 +71,9 @@ describe('checkOwaspTop10Training', () => {
       }
     ]
     isDateWithinPolicy.mockReturnValue(false)
-    checkOwaspTop10Training(projects, checks)
+    checkOwaspTop10Training({ projects, checks, tasks, alerts })
     expect(checks).toMatchSnapshot()
+    expect(tasks).toMatchSnapshot()
+    expect(alerts).toMatchSnapshot()
   })
 })
