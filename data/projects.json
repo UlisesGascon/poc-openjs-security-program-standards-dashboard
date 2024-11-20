@@ -1,6 +1,7 @@
 [
   {
     "name": "express",
+    "category": "impact",
     "githubOrgs": [
       {
         "url": "https://github.com/expressjs",
