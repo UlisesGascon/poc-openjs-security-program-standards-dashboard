@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`checkSecureSoftwareDesignTraining should handle projects with expired training 1`] = `
+{
+  "secureSoftwareDesignTraining": {
+    "description": "At least One Primary Maintainer has taken TBD Training on Secure Software Design",
+    "level": {
+      "graduated": "expected",
+      "incubating": "expected",
+      "retiring": "expected",
+    },
+    "name": "Secure Software Design Training",
+    "projects": {
+      "Project4": {
+        "globalAchievement": false,
+        "rationale": "The team has not completed the required training or requires an update.",
+      },
+    },
+    "url": "https://openjs-security-program-standards.netlify.app/details/item-0",
+  },
+}
+`;
+
+exports[`checkSecureSoftwareDesignTraining should handle projects with no additional information 1`] = `
+{
+  "secureSoftwareDesignTraining": {
+    "description": "At least One Primary Maintainer has taken TBD Training on Secure Software Design",
+    "level": {
+      "graduated": "expected",
+      "incubating": "expected",
+      "retiring": "expected",
+    },
+    "name": "Secure Software Design Training",
+    "projects": {
+      "Project3": {
+        "globalAchievement": false,
+        "rationale": "The team has not completed the required training or requires an update.",
+      },
+    },
+    "url": "https://openjs-security-program-standards.netlify.app/details/item-0",
+  },
+}
+`;
+
+exports[`checkSecureSoftwareDesignTraining should update checks with project compliance data 1`] = `
+{
+  "secureSoftwareDesignTraining": {
+    "description": "At least One Primary Maintainer has taken TBD Training on Secure Software Design",
+    "level": {
+      "graduated": "expected",
+      "incubating": "expected",
+      "retiring": "expected",
+    },
+    "name": "Secure Software Design Training",
+    "projects": {
+      "Project1": {
+        "globalAchievement": true,
+        "rationale": "Training completed",
+      },
+      "Project2": {
+        "globalAchievement": false,
+        "rationale": "The team has not completed the required training or requires an update.",
+      },
+    },
+    "url": "https://openjs-security-program-standards.netlify.app/details/item-0",
+  },
+}
+`;
