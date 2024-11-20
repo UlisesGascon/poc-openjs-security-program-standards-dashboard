@@ -19,6 +19,7 @@ const generalExpirationPolicy = '90d'
 
 const defaultValues = {
   dataPath: join(process.cwd(), 'data'),
+  reportsPath: join(process.cwd(), 'resources', 'reports'),
   relevantRepoProperties,
   projectCategories,
   checksCategories,
@@ -27,6 +28,7 @@ const defaultValues = {
 
 const testEnvironment = {
   dataPath: join(process.cwd(), '__tests__', 'data'),
+  reportsPath: join(process.cwd(), '__tests__', 'reports'),
   relevantRepoProperties,
   projectCategories,
   checksCategories,
