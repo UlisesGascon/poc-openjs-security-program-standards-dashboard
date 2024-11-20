@@ -15,8 +15,7 @@ const checksCategories = [
   'dependency inventory'
 ]
 
-const NINETY_DAYS = 90 * 24 * 60 * 60 * 1000
-const generalExpirationPolicy = NINETY_DAYS
+const generalExpirationPolicy = '90d'
 
 const defaultValues = {
   dataPath: join(process.cwd(), 'data'),
