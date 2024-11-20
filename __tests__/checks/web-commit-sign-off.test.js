@@ -13,12 +13,12 @@ describe('checkWebCommitSignOff', () => {
         githubOrgs: [
           {
             repositories: [
-              { 
+              {
                 web_commit_signoff_required: true,
                 full_name: 'org1/repo',
                 html_url: 'https://github.com/org1/repo'
               },
-              { 
+              {
                 web_commit_signoff_required: false,
                 full_name: 'org1/repo2',
                 html_url: 'https://github.com/org1/repo2'
@@ -32,12 +32,12 @@ describe('checkWebCommitSignOff', () => {
         githubOrgs: [
           {
             repositories: [
-              { 
+              {
                 web_commit_signoff_required: true,
                 full_name: 'org2/repo',
                 html_url: 'https://github.com/org1/repo'
               },
-              { 
+              {
                 web_commit_signoff_required: true,
                 full_name: 'org2/repo2',
                 html_url: 'https://github.com/org1/repo2'
