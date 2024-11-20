@@ -4994,6 +4994,23 @@
           }
         ]
       }
-    ]
+    ],
+    "additionalInformation": {
+      "owaspTop10Training": {
+        "globalAchievement": false,
+        "rationale": "The team has not provided any information about OWASP Top 10 training",
+        "confirmationDate": "2024-11-19T07:28:43Z"
+      },
+      "secureSoftwareDesignTraining": {
+        "globalAchievement": false,
+        "rationale": "The team has not provided any information about secure software design training",
+        "confirmationDate": "2024-11-19T07:28:43Z"
+      },
+      "npmMfaEnabled": {
+        "globalAchievement": true,
+        "rationale": "The team has enabled MFA and it is not using tokens to publicate packages",
+        "confirmationDate": "2024-03-01T00:00:00Z"
+      }
+    } 
   }
 ]

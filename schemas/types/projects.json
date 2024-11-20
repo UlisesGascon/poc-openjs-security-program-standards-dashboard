@@ -259,6 +259,78 @@
                 ],
                 "additionalProperties": false
             }
+        },
+        "additionalInformation": {
+            "type": [
+                "object",
+                "null"
+            ],
+            "properties": {
+                "owaspTop10Training": {
+                    "type": "object",
+                    "properties": {
+                        "globalAchievement": {
+                            "type": "boolean"
+                        },
+                        "rationale": {
+                            "type": "string"
+                        },
+                        "confirmationDate": {
+                            "type": "string",
+                            "format": "date-time"
+                        }
+                    },
+                    "required": [
+                        "globalAchievement",
+                        "rationale",
+                        "confirmationDate"
+                    ],
+                    "additionalProperties": false
+                },
+                "secureSoftwareDesignTraining": {
+                    "type": "object",
+                    "properties": {
+                        "globalAchievement": {
+                            "type": "boolean"
+                        },
+                        "rationale": {
+                            "type": "string"
+                        },
+                        "confirmationDate": {
+                            "type": "string",
+                            "format": "date-time"
+                        }
+                    },
+                    "required": [
+                        "globalAchievement",
+                        "rationale",
+                        "confirmationDate"
+                    ],
+                    "additionalProperties": false
+                },
+                "npmMfaEnabled": {
+                    "type": "object",
+                    "properties": {
+                        "globalAchievement": {
+                            "type": "boolean"
+                        },
+                        "rationale": {
+                            "type": "string"
+                        },
+                        "confirmationDate": {
+                            "type": "string",
+                            "format": "date-time"
+                        }
+                    },
+                    "required": [
+                        "globalAchievement",
+                        "rationale",
+                        "confirmationDate"
+                    ],
+                    "additionalProperties": false
+                }
+            },
+            "additionalProperties": false
         }
     },
     "required": [
