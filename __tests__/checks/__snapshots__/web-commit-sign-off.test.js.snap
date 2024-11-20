@@ -3,6 +3,7 @@
 exports[`checkWebCommitSignOff should handle projects with no repositories 1`] = `
 {
   "webCommitSignOff": {
+    "category": "source control",
     "description": "Github Org Requires Commit Sign-off for Web-Based Commits",
     "level": {
       "graduated": "recommended",
@@ -24,6 +25,7 @@ exports[`checkWebCommitSignOff should handle projects with no repositories 1`] =
 exports[`checkWebCommitSignOff should update checks with project compliance data 1`] = `
 {
   "webCommitSignOff": {
+    "category": "source control",
     "description": "Github Org Requires Commit Sign-off for Web-Based Commits",
     "level": {
       "graduated": "recommended",

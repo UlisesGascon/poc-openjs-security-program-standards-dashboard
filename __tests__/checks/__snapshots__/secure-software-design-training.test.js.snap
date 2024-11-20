@@ -3,6 +3,7 @@
 exports[`checkSecureSoftwareDesignTraining should handle projects with expired training 1`] = `
 {
   "secureSoftwareDesignTraining": {
+    "category": "code quality",
     "description": "At least One Primary Maintainer has taken TBD Training on Secure Software Design",
     "level": {
       "graduated": "expected",
@@ -24,6 +25,7 @@ exports[`checkSecureSoftwareDesignTraining should handle projects with expired t
 exports[`checkSecureSoftwareDesignTraining should handle projects with no additional information 1`] = `
 {
   "secureSoftwareDesignTraining": {
+    "category": "code quality",
     "description": "At least One Primary Maintainer has taken TBD Training on Secure Software Design",
     "level": {
       "graduated": "expected",
@@ -45,6 +47,7 @@ exports[`checkSecureSoftwareDesignTraining should handle projects with no additi
 exports[`checkSecureSoftwareDesignTraining should update checks with project compliance data 1`] = `
 {
   "secureSoftwareDesignTraining": {
+    "category": "code quality",
     "description": "At least One Primary Maintainer has taken TBD Training on Secure Software Design",
     "level": {
       "graduated": "expected",

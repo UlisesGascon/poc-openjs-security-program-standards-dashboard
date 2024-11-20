@@ -3,6 +3,7 @@
 exports[`checkNpmMfaEnabled should handle projects with expired setup 1`] = `
 {
   "npmMfaEnabled": {
+    "category": "user authentication",
     "description": "Multi Factor Authentication (MFA) Enforced Across the npm Organization",
     "level": {
       "graduated": "expected",
@@ -24,6 +25,7 @@ exports[`checkNpmMfaEnabled should handle projects with expired setup 1`] = `
 exports[`checkNpmMfaEnabled should handle projects with no additional information 1`] = `
 {
   "npmMfaEnabled": {
+    "category": "user authentication",
     "description": "Multi Factor Authentication (MFA) Enforced Across the npm Organization",
     "level": {
       "graduated": "expected",
@@ -45,6 +47,7 @@ exports[`checkNpmMfaEnabled should handle projects with no additional informatio
 exports[`checkNpmMfaEnabled should update checks with project compliance data 1`] = `
 {
   "npmMfaEnabled": {
+    "category": "user authentication",
     "description": "Multi Factor Authentication (MFA) Enforced Across the npm Organization",
     "level": {
       "graduated": "expected",
