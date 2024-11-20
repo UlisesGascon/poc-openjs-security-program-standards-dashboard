@@ -16,7 +16,7 @@ exports[`checkOwaspTop10Training should handle projects with expired training 1`
         "rationale": "The team has not completed the required training or requires an update.",
       },
     },
-    "url": "https://openjs-security-program-standards.netlify.app/details/item-0",
+    "url": "https://openjs-security-program-standards.netlify.app/details/item-1",
   },
 }
 `;
@@ -37,7 +37,7 @@ exports[`checkOwaspTop10Training should handle projects with no additional infor
         "rationale": "The team has not completed the required training or requires an update.",
       },
     },
-    "url": "https://openjs-security-program-standards.netlify.app/details/item-0",
+    "url": "https://openjs-security-program-standards.netlify.app/details/item-1",
   },
 }
 `;
@@ -62,7 +62,7 @@ exports[`checkOwaspTop10Training should update checks with project compliance da
         "rationale": "The team has not completed the required training or requires an update.",
       },
     },
-    "url": "https://openjs-security-program-standards.netlify.app/details/item-0",
+    "url": "https://openjs-security-program-standards.netlify.app/details/item-1",
   },
 }
 `;
