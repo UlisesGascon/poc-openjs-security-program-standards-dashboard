@@ -24,38 +24,48 @@ describe('ensureGithubToken', () => {
 
 describe('isDateWithinPolicy', () => {
   it('should return true for date within 90 days', () => {
-    const startDate = new Date().toISOString()
+    const targetDate = new Date().toISOString()
     const policy = '90d'
-    expect(isDateWithinPolicy(startDate, policy)).toBe(true)
+    expect(isDateWithinPolicy(targetDate, policy)).toBe(true)
   })
 
   it('should return false for date outside 90 days', () => {
-    const startDate = new Date(new Date().setDate(new Date().getDate() - 91)).toISOString()
+    const targetDate = new Date(new Date().setDate(new Date().getDate() - 91)).toISOString()
     const policy = '90d'
-    expect(isDateWithinPolicy(startDate, policy)).toBe(false)
+    expect(isDateWithinPolicy(targetDate, policy)).toBe(false)
   })
 
   it('should return true for date within 3 months', () => {
-    const startDate = new Date().toISOString()
+    const targetDate = new Date().toISOString()
     const policy = '3m'
-    expect(isDateWithinPolicy(startDate, policy)).toBe(true)
+    expect(isDateWithinPolicy(targetDate, policy)).toBe(true)
   })
 
   it('should return false for date outside 3 months', () => {
-    const startDate = new Date(new Date().setMonth(new Date().getMonth() - 4)).toISOString()
+    const targetDate = new Date(new Date().setMonth(new Date().getMonth() - 4)).toISOString()
     const policy = '3m'
-    expect(isDateWithinPolicy(startDate, policy)).toBe(false)
+    expect(isDateWithinPolicy(targetDate, policy)).toBe(false)
   })
 
   it('should return true for date within 1 quarter', () => {
-    const startDate = new Date().toISOString()
+    const targetDate = new Date().toISOString()
     const policy = '1q'
-    expect(isDateWithinPolicy(startDate, policy)).toBe(true)
+    expect(isDateWithinPolicy(targetDate, policy)).toBe(true)
   })
 
   it('should throw an error for unsupported policy format', () => {
-    const startDate = new Date().toISOString()
+    const targetDate = new Date().toISOString()
     const policy = '10y' // Unsupported format
-    expect(() => isDateWithinPolicy(startDate, policy)).toThrow('Unsupported policy format')
+    expect(() => isDateWithinPolicy(targetDate, policy)).toThrow('Unsupported policy format')
+  })
+
+  it('should throw an error if expiration policy is not provided', () => {
+    const targetDate = new Date().toISOString()
+    expect(() => isDateWithinPolicy(targetDate)).toThrow('Policy is required')
+  })
+
+  it('should throw an error if the targetDate is not provided', () => {
+    const policy = '3m'
+    expect(() => isDateWithinPolicy(undefined, policy)).toThrow('Target date is required')
   })
 })
