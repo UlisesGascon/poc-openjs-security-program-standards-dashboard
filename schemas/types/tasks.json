@@ -1,0 +1,54 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "patternProperties": {
+        "^[a-zA-Z0-9_-]+$": {
+            "type": "object",
+            "patternProperties": {
+                "^[a-zA-Z0-9_-]+$": {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "type": "string"
+                        },
+                        "description": {
+                            "type": "string"
+                        },
+                        "priority": {
+                            "type": "string",
+                            "enum": ["critical", "high", "medium", "low"]
+                        },
+                        "url": {
+                            "type": "string",
+                            "format": "uri"
+                        },
+                        "category": {
+                            "type": "string"
+                        },
+                        "repositories": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "full_name": {
+                                        "type": "string"
+                                    },
+                                    "html_url": {
+                                        "type": "string",
+                                        "format": "uri"
+                                    }
+                                },
+                                "required": ["full_name", "html_url"],
+                                "additionalProperties": false
+                            }
+                        }
+                    },
+                    "required": ["name", "description", "priority", "url", "category"],
+                    "additionalProperties": false
+                }
+            },
+            "additionalProperties": false
+        }
+    },
+    "additionalProperties": false
+}
