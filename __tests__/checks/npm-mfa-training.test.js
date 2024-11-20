@@ -6,6 +6,8 @@ jest.mock('../../lib/utils/index.js')
 describe('checkNpmMfaEnabled', () => {
   let projects
   let checks
+  let tasks
+  let alerts
 
   beforeEach(() => {
     projects = [
@@ -31,12 +33,16 @@ describe('checkNpmMfaEnabled', () => {
       }
     ]
     checks = {}
+    tasks = {}
+    alerts = {}
     isDateWithinPolicy.mockReturnValue(true)
   })
 
   it('should update checks with project compliance data', () => {
-    checkNpmMfaEnabled(projects, checks)
+    checkNpmMfaEnabled({ projects, checks, tasks, alerts })
     expect(checks).toMatchSnapshot()
+    expect(tasks).toMatchSnapshot()
+    expect(alerts).toMatchSnapshot()
   })
 
   it('should handle projects with no additional information', () => {
@@ -45,8 +51,10 @@ describe('checkNpmMfaEnabled', () => {
         name: 'Project3'
       }
     ]
-    checkNpmMfaEnabled(projects, checks)
+    checkNpmMfaEnabled({ projects, checks, tasks, alerts })
     expect(checks).toMatchSnapshot()
+    expect(tasks).toMatchSnapshot()
+    expect(alerts).toMatchSnapshot()
   })
 
   it('should handle projects with expired setup', () => {
@@ -63,7 +71,9 @@ describe('checkNpmMfaEnabled', () => {
       }
     ]
     isDateWithinPolicy.mockReturnValue(false)
-    checkNpmMfaEnabled(projects, checks)
+    checkNpmMfaEnabled({ projects, checks, tasks, alerts })
     expect(checks).toMatchSnapshot()
+    expect(tasks).toMatchSnapshot()
+    expect(alerts).toMatchSnapshot()
   })
 })

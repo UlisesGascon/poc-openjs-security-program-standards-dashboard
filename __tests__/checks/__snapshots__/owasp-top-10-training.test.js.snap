@@ -22,6 +22,34 @@ exports[`checkOwaspTop10Training should handle projects with expired training 1`
 }
 `;
 
+exports[`checkOwaspTop10Training should handle projects with expired training 2`] = `
+{
+  "Project4": {
+    "owaspTop10Training": {
+      "category": "code quality",
+      "description": "At least One Primary Maintainer has taken TBD Training on OWASP Top 10 or Equivalent",
+      "name": "Train or renew the certification for the team on OWASP Top 10",
+      "priority": "critical",
+      "url": "https://openjs-security-program-standards.netlify.app/details/item-1",
+    },
+  },
+}
+`;
+
+exports[`checkOwaspTop10Training should handle projects with expired training 3`] = `
+{
+  "Project4": {
+    "owaspTop10Training": {
+      "category": "code quality",
+      "description": "At least One Primary Maintainer has taken TBD Training on OWASP Top 10 or Equivalent",
+      "name": "Lack of Training or validation on OWASP Top 10",
+      "priority": "critical",
+      "url": "https://openjs-security-program-standards.netlify.app/details/item-1",
+    },
+  },
+}
+`;
+
 exports[`checkOwaspTop10Training should handle projects with no additional information 1`] = `
 {
   "owaspTop10Training": {
@@ -40,6 +68,34 @@ exports[`checkOwaspTop10Training should handle projects with no additional infor
       },
     },
     "url": "https://openjs-security-program-standards.netlify.app/details/item-1",
+  },
+}
+`;
+
+exports[`checkOwaspTop10Training should handle projects with no additional information 2`] = `
+{
+  "Project3": {
+    "owaspTop10Training": {
+      "category": "code quality",
+      "description": "At least One Primary Maintainer has taken TBD Training on OWASP Top 10 or Equivalent",
+      "name": "Train or renew the certification for the team on OWASP Top 10",
+      "priority": "critical",
+      "url": "https://openjs-security-program-standards.netlify.app/details/item-1",
+    },
+  },
+}
+`;
+
+exports[`checkOwaspTop10Training should handle projects with no additional information 3`] = `
+{
+  "Project3": {
+    "owaspTop10Training": {
+      "category": "code quality",
+      "description": "At least One Primary Maintainer has taken TBD Training on OWASP Top 10 or Equivalent",
+      "name": "Lack of Training or validation on OWASP Top 10",
+      "priority": "critical",
+      "url": "https://openjs-security-program-standards.netlify.app/details/item-1",
+    },
   },
 }
 `;
@@ -66,6 +122,34 @@ exports[`checkOwaspTop10Training should update checks with project compliance da
       },
     },
     "url": "https://openjs-security-program-standards.netlify.app/details/item-1",
+  },
+}
+`;
+
+exports[`checkOwaspTop10Training should update checks with project compliance data 2`] = `
+{
+  "Project2": {
+    "owaspTop10Training": {
+      "category": "code quality",
+      "description": "At least One Primary Maintainer has taken TBD Training on OWASP Top 10 or Equivalent",
+      "name": "Train or renew the certification for the team on OWASP Top 10",
+      "priority": "critical",
+      "url": "https://openjs-security-program-standards.netlify.app/details/item-1",
+    },
+  },
+}
+`;
+
+exports[`checkOwaspTop10Training should update checks with project compliance data 3`] = `
+{
+  "Project2": {
+    "owaspTop10Training": {
+      "category": "code quality",
+      "description": "At least One Primary Maintainer has taken TBD Training on OWASP Top 10 or Equivalent",
+      "name": "Lack of Training or validation on OWASP Top 10",
+      "priority": "critical",
+      "url": "https://openjs-security-program-standards.netlify.app/details/item-1",
+    },
   },
 }
 `;

@@ -22,6 +22,10 @@ exports[`checkWebCommitSignOff should handle projects with no repositories 1`] =
 }
 `;
 
+exports[`checkWebCommitSignOff should handle projects with no repositories 2`] = `{}`;
+
+exports[`checkWebCommitSignOff should handle projects with no repositories 3`] = `{}`;
+
 exports[`checkWebCommitSignOff should update checks with project compliance data 1`] = `
 {
   "webCommitSignOff": {
@@ -47,3 +51,25 @@ exports[`checkWebCommitSignOff should update checks with project compliance data
   },
 }
 `;
+
+exports[`checkWebCommitSignOff should update checks with project compliance data 2`] = `
+{
+  "Project1": {
+    "webCommitSignOff": {
+      "category": "source control",
+      "description": "Enable commit sign-off for web-based commits in all repositories",
+      "name": "Enable Commit Sign-off for Web-Based Commits",
+      "priority": "low",
+      "repositories": [
+        {
+          "full_name": "org1/repo2",
+          "html_url": "https://github.com/org1/repo2",
+        },
+      ],
+      "url": "https://openjs-security-program-standards.netlify.app/details/item-62",
+    },
+  },
+}
+`;
+
+exports[`checkWebCommitSignOff should update checks with project compliance data 3`] = `{}`;
