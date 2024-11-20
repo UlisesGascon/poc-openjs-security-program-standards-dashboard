@@ -15,18 +15,23 @@ const checksCategories = [
   'dependency inventory'
 ]
 
+const NINETY_DAYS = 90 * 24 * 60 * 60 * 1000
+const generalExpirationPolicy = NINETY_DAYS
+
 const defaultValues = {
   dataPath: join(process.cwd(), 'data'),
   relevantRepoProperties,
   projectCategories,
-  checksCategories
+  checksCategories,
+  generalExpirationPolicy
 }
 
 const testEnvironment = {
   dataPath: join(process.cwd(), '__tests__', 'data'),
   relevantRepoProperties,
   projectCategories,
-  checksCategories
+  checksCategories,
+  generalExpirationPolicy
 }
 
 export function getConfig (env) {
