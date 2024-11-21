@@ -1,5 +1,17 @@
 # POC - OpenJS Security Program Standards Dashboard
 
+
+
+## 📺 Tutorial
+
+If you don't have a good context of this POC motivation, please watch the following video or the slides:
+
+[![Screenshot from 2024-11-21 15-26-46](https://github.com/user-attachments/assets/e34187bb-c69a-4c2f-b061-ccbf0f7291db)
+](https://youtu.be/B1kd8k5SvBI)
+
+- [slides](https://slides.ulisesgascon.com/openjs-security-program-standards/)
+
+
 ## Installation
 
 To install the dependencies, run:
