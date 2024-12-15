@@ -1,5 +1,12 @@
 # POC - OpenJS Security Program Standards Dashboard
 
+---
+
+**✨ This POC has evolved into something bigger and fantastic! Check out [OpenPathfinder/visionBoard](https://github.com/OpenPathfinder/visionBoard) ✨**
+
+At this stage, this POC is considered archived, and all development activity has been migrated to [visionBoard](https://github.com/OpenPathfinder/visionBoard).
+
+---
 
 
 ## 📺 Tutorial
